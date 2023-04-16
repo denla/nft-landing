@@ -24,6 +24,12 @@
             <li class="header__item"><a href="#">Feature</a></li>
             <li class="header__item"><a href="#">FAQ</a></li>
             <li class="header__item"><a href="#" class="button button__main">Select Wallet</a></li>
+            <div class="header__actions">
+              <img id="search-icon" src="./images/search white.svg" /><img
+                id="menu-icon"
+                src="./images/menu.svg"
+              />
+            </div>
           </ul>
         </nav>
       </header>
@@ -36,14 +42,17 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
               velit.
             </p>
-            <a href="#" class="button button__main">Explore Now</a>
-            <a href="#" class="button button__secondary">Sell NFT</a>
 
-            <ul class="main__counts">
-              <li class="main__item"><span>37k+</span>Artworks</li>
-              <li class="main__item"><span>20k+</span>Artists</li>
-              <li class="main__item"><span>99k+</span>Aucations</li>
-            </ul>
+            <div class="main__buttons">
+              <a href="#" class="button button__main">Explore Now</a>
+              <a href="#" class="button button__secondary">Sell NFT</a>
+            </div>
+
+            <div class="main__counts">
+              <div class="main__item"><span>37k+</span>Artworks</div>
+              <div class="main__item"><span>20k+</span>Artists</div>
+              <div class="main__item"><span>99k+</span>Aucations</div>
+            </div>
           </div>
 
           <div class="main__image">
@@ -67,7 +76,10 @@
 
           <div class="cards">
             <div class="card">
-              <div class="card__img"></div>
+              <div
+                class="card__img"
+                style="background: url('./images/daniels-joffe--SmCKTIcH5E-unsplash\ 1.png')"
+              ></div>
               <div class="card_desc">
                 <div class="card__info">
                   <p>@Johny<span>Yellow Painting</span></p>
@@ -79,7 +91,10 @@
             </div>
 
             <div class="card">
-              <div class="card__img"></div>
+              <div
+                class="card__img"
+                style="background: url('./images/fakurian-design-LoLiXKJEvgE-unsplash\ 1.png')"
+              ></div>
               <div class="card_desc">
                 <div class="card__info">
                   <p>@Johny<span>Yellow Painting</span></p>
@@ -91,7 +106,7 @@
             </div>
 
             <div class="card">
-              <div class="card__img"></div>
+              <div class="card__img" style="background: url('./images/Rectangle\ 23.png')"></div>
               <div class="card_desc">
                 <div class="card__info">
                   <p>@Johny<span>Yellow Painting</span></p>
@@ -108,67 +123,146 @@
       <section>
         <div class="container">
           <div class="title__block">
+            <h2 class="title">Top Creator</h2>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+          <div class="cards">
+            <div class="card creator">
+              <div
+                class="creator__cover"
+                style="background: url('./images/dan-cristian-padure-SMSLyc9FHl0-unsplash\ \(1\)\ 1.png"
+              ></div>
+              <div class="card__desc text-center">
+                <div class="card__info">
+                  <div
+                    class="creator__avatar"
+                    style="
+                      background: url('./images/aiony-haust-3TLl_97HNJo-unsplash\ \(1\)\ 1.png');
+                    "
+                  ></div>
+                  <p class="creator__name">John Wick</p>
+                  <p class="creator__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <a href="#" class="button button__main w100">+ Follow</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card creator">
+              <div
+                class="creator__cover"
+                style="background: url('./images/david-sjunnesson-XMOX_4H8Ifc-unsplash\ 1.png')"
+              ></div>
+              <div class="card__desc text-center">
+                <div class="card__info">
+                  <div
+                    class="creator__avatar"
+                    style="background: url('./images/albert-dera-ILip77SbmOE-unsplash\ 1.png')"
+                  ></div>
+                  <p class="creator__name">John Wick</p>
+                  <p class="creator__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <a href="#" class="button button__main w100">+ Follow</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card creator">
+              <div
+                class="creator__cover"
+                style="background: url('./images/zak-7wBFsHWQDlk-unsplash\ 1.png')"
+              ></div>
+              <div class="card__desc text-center">
+                <div class="card__info">
+                  <div
+                    class="creator__avatar"
+                    style="background: url('./images/stefano-ciociola-g7zxCCsIl6w-unsplash\ 1.png')"
+                  ></div>
+                  <p class="creator__name">John Wick</p>
+                  <p class="creator__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <a href="#" class="button button__main w100">+ Follow</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="title__block">
             <h2 class="title">Frequently Asked Questions</h2>
             <p class="desc">Wanna Ask Something?</p>
           </div>
 
           <div class="question">
-            <div class="question__item">
-              <div class="question__header">
-                <div class="question__text">What is an NFT?</div>
-                <div class="question__icon">+</div>
+            <div class="question__col">
+              <div class="question__item">
+                <div class="question__header">
+                  <div class="question__text">What is an NFT?</div>
+                  <div class="question__icon">+</div>
+                </div>
+                <div class="question__answer">
+                  An NFT is a new type of digital asset that is built on the Ethereum blockchain. It
+                  is a tamper-proof, persistent digital asset that can be used to represent shares,
+                  debts, royalties, or any other type of ownership interest.
+                </div>
               </div>
-              <div class="question__answer">
-                An NFT is a new type of digital asset that is built on the Ethereum blockchain. It
-                is a tamper-proof, persistent digital asset that can be used to represent shares,
-                debts, royalties, or any other type of ownership interest.
+
+              <div class="question__item">
+                <div class="question__header">
+                  <div class="question__text">How long can I use this service?</div>
+                  <div class="question__icon">+</div>
+                </div>
+                <div class="question__answer">
+                  That way people researching children’s shoes will find your content, even if they
+                  don’t know about your products yet. Ta da, now you’ve got a new customer.
+                </div>
+              </div>
+
+              <div class="question__item">
+                <div class="question__header">
+                  <div class="question__text">How much does it cost?</div>
+                  <div class="question__icon">+</div>
+                </div>
+                <div class="question__answer">
+                  That way people researching children’s shoes will find your content, even if they
+                  don’t know about your products yet. Ta da, now you’ve got a new customer.?
+                </div>
               </div>
             </div>
 
-            <div class="question__item">
-              <div class="question__header">
-                <div class="question__text">How long can I use this service?</div>
-                <div class="question__icon">+</div>
+            <div class="question__col">
+              <div class="question__item">
+                <div class="question__header">
+                  <div class="question__text">
+                    What the difference between Bitcoin and Etherium?
+                  </div>
+                  <div class="question__icon">+</div>
+                </div>
+                <div class="question__answer">Lorem ipsum ipsum?</div>
               </div>
-              <div class="question__answer">
-                That way people researching children’s shoes will find your content, even if they
-                don’t know about your products yet. Ta da, now you’ve got a new customer.
-              </div>
-            </div>
 
-            <div class="question__item">
-              <div class="question__header">
-                <div class="question__text">How much does it cost?</div>
-                <div class="question__icon">+</div>
+              <div class="question__item">
+                <div class="question__header">
+                  <div class="question__text">Lorem ipsum ipsum?</div>
+                  <div class="question__icon">+</div>
+                </div>
+                <div class="question__answer">Lorem ipsum ipsum?</div>
               </div>
-              <div class="question__answer">
-                That way people researching children’s shoes will find your content, even if they
-                don’t know about your products yet. Ta da, now you’ve got a new customer.?
-              </div>
-            </div>
 
-            <div class="question__item">
-              <div class="question__header">
-                <div class="question__text">What the difference between Bitcoin and Etherium?</div>
-                <div class="question__icon">+</div>
+              <div class="question__item">
+                <div class="question__header">
+                  <div class="question__text">Lorem ipsum ipsum?</div>
+                  <div class="question__icon">+</div>
+                </div>
+                <div class="question__answer">Lorem ipsum ipsum?</div>
               </div>
-              <div class="question__answer">Lorem ipsum ipsum?</div>
-            </div>
-
-            <div class="question__item">
-              <div class="question__header">
-                <div class="question__text">Lorem ipsum ipsum?</div>
-                <div class="question__icon">+</div>
-              </div>
-              <div class="question__answer">Lorem ipsum ipsum?</div>
-            </div>
-
-            <div class="question__item">
-              <div class="question__header">
-                <div class="question__text">Lorem ipsum ipsum?</div>
-                <div class="question__icon">+</div>
-              </div>
-              <div class="question__answer">Lorem ipsum ipsum?</div>
             </div>
           </div>
         </div>
@@ -193,38 +287,39 @@
               buy our work
             </p>
           </div>
+          <div class="footer__secondary">
+            <div class="footer__col">
+              <h3>About</h3>
+              <ul>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Resource</a></li>
+                <li><a href="#">Term & Condition</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
 
-          <div class="footer__col">
-            <h3>About</h3>
-            <ul>
-              <li><a href="#">Product</a></li>
-              <li><a href="#">Resource</a></li>
-              <li><a href="#">Term & Condition</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
+            <div class="footer__col">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Partner With Us</a></li>
+                <li><a href="#">Privacy & Policy</a></li>
+                <li><a href="#">Features</a></li>
+              </ul>
+            </div>
 
-          <div class="footer__col">
-            <h3>Company</h3>
-            <ul>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Partner With Us</a></li>
-              <li><a href="#">Privacy & Policy</a></li>
-              <li><a href="#">Features</a></li>
-            </ul>
-          </div>
+            <div class="footer__col">
+              <h3>Contact</h3>
+              <ul>
+                <li><a href="#">+012 3456789</a></li>
+                <li><a href="#">mgmt@gmail.com</a></li>
+              </ul>
 
-          <div class="footer__col">
-            <h3>Contact</h3>
-            <ul>
-              <li><a href="#">+012 3456789</a></li>
-              <li><a href="#">adorableprogrammer@gmail.com</a></li>
-            </ul>
-
-            <div class="social_icons">
-              <img src="./images/youtube.svg" />
-              <img src="./images/discord.svg" />
-              <img src="./images/instagram.svg" />
+              <div class="social_icons">
+                <img src="./images/youtube.svg" />
+                <img src="./images/discord.svg" />
+                <img src="./images/instagram.svg" />
+              </div>
             </div>
           </div>
         </div>
